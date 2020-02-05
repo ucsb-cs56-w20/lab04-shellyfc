@@ -146,16 +146,17 @@ public class Rational {
             throw new ArithmeticException("Cannot have a denominator of 0");
 
         }
+    
 
-	Rational r = new Rational(this.denom, this.num);
+	    Rational r = new Rational(this.denom, this.num);
 
-	if(r.denom < 0) {
+	    if(r.denom < 0) {
 
-		r.num *= -1;
+		    r.num *= -1;
 
-		r.denom *= -1;
+		    r.denom *= -1;
 
-	}
+	    }
 
     	return r;
 

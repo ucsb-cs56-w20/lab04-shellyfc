@@ -30,47 +30,47 @@ public class RationalTest {
 
     @Test
     public void testSum1() {
-        assertEquals("14/15", r_0_1.sum(r_5_15, r_9_15).toString());
+        assertEquals("14/15", Rational.sum(r_5_15, r_9_15).toString());
     }
 
     @Test
     public void testSum2() {
-        assertEquals("31/7", r_0_1.sum(r_24_6, r_3_7).toString());
+        assertEquals("31/7", Rational.sum(r_24_6, r_3_7).toString());
     }
 
     @Test
     public void testSum3() {
-        assertEquals("3/7", r_0_1.sum(r_0_1, r_3_7).toString());
+        assertEquals("3/7", Rational.sum(r_0_1, r_3_7).toString());
     }
 
     @Test
     public void testDifference1() {
-        assertEquals("4/15", r_0_1.difference(r_9_15, r_5_15).toString());
+        assertEquals("4/15", Rational.difference(r_9_15, r_5_15).toString());
     }
 
     @Test
     public void testDifference2() {
-        assertEquals("-79/28", r_0_1.difference(r_3_7, r_13_4).toString());
+        assertEquals("-79/28", Rational.difference(r_3_7, r_13_4).toString());
     }
 
     @Test
     public void testDifference3() {
-        assertEquals("3/7", r_0_1.difference(r_3_7, r_0_1).toString());
+        assertEquals("3/7", Rational.difference(r_3_7, r_0_1).toString());
     }
 
     @Test
     public void testQuotient1(){
-        assertEquals("16/25",r_0_1.quotient(r_20_25,r_25_20).toString());
+        assertEquals("16/25",Rational.quotient(r_20_25,r_25_20).toString());
     }
 
     @Test
     public void testQuotient2(){
-        assertEquals("1",r_0_1.quotient(r_20_25,r_20_25).toString());
+        assertEquals("1",Rational.quotient(r_20_25,r_20_25).toString());
     }
 
     @Test 
     public void testQuotient3(){
-        assertEquals("0",r_0_1.quotient(r_0_1,r_25_20).toString());
+        assertEquals("0",Rational.quotient(r_0_1,r_25_20).toString());
     }
 
     @Test(expected = IllegalArgumentException.class)
